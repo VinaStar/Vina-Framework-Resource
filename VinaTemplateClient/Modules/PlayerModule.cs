@@ -13,9 +13,9 @@ namespace VinaTemplateClient.Modules
 {
     public class PlayerModule : Module
     {
-        public PlayerModule(MyTemplateClient client) : base(client)
+        public PlayerModule(Client client) : base(client)
         {
-            client.AddTick(UpdateProcess);
+            script.AddTick(UpdateProcess);
         }
 
         #region MODULES
@@ -50,7 +50,7 @@ namespace VinaTemplateClient.Modules
 
         private async Task UpdateProcess()
         {
-            await Delay(0);
+            await Client.Delay(0);
         }
 
         #endregion

@@ -15,7 +15,7 @@ namespace VinaTemplateClient.Modules
     {
         public VehicleModule(BaseClient client) : base(client)
         {
-            client.AddTick(UpdateProcess);
+            script.AddTick(UpdateProcess);
         }
 
         #region MODULES
@@ -50,7 +50,7 @@ namespace VinaTemplateClient.Modules
 
         private async Task UpdateProcess()
         {
-            await Delay(0);
+            await Client.Delay(0);
         }
 
         #endregion

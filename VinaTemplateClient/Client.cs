@@ -3,9 +3,9 @@ using VinaTemplateClient.Modules;
 
 namespace VinaTemplateClient
 {
-    public class MyTemplateClient : BaseClient
+    public class Client : BaseClient
     {
-        public MyTemplateClient()
+        public Client()
         {
             AddModule(typeof(PlayerModule));
             AddModule(typeof(VehicleModule));

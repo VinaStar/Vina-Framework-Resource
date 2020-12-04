@@ -13,9 +13,9 @@ namespace VinaTemplateServer.Modules
 {
     public class VehicleModule : Module
     {
-        public VehicleModule(MyTemplateServer server) : base(server)
+        public VehicleModule(Server server) : base(server)
         {
-            server.AddTick(UpdateProcess);
+            script.AddTick(UpdateProcess);
         }
 
         #region MODULES
@@ -65,7 +65,7 @@ namespace VinaTemplateServer.Modules
 
         private async Task UpdateProcess()
         {
-            await Delay(0);
+            await Server.Delay(0);
         }
 
         #endregion
