@@ -5,9 +5,10 @@ C# Template Resource Built for Vina-Framework
   
 ## REQUIREMENTS
 [Vina Framework](https://github.com/VinaStar/Vina-Framework)  
-[Complete Documentation](http://vinasky.online/Vina-Framework-Doc/)  
   
 ---
   
 ## INFORMATIONS
-Coming soon
+[Complete Documentation](http://vinasky.online/Vina-Framework-Doc/)  
+  
+More Coming soon.
