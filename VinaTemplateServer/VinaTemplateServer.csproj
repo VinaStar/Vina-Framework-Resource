@@ -49,8 +49,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modules\PlayerModule.cs" />
-    <Compile Include="Modules\VehicleModule.cs" />
+    <Compile Include="Modules\BasicModule.cs" />
     <Compile Include="Server.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

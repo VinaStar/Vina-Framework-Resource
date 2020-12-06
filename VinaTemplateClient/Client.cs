@@ -7,8 +7,7 @@ namespace VinaTemplateClient
     {
         public Client()
         {
-            AddModule(typeof(PlayerModule));
-            AddModule(typeof(VehicleModule));
+            AddModule(typeof(BasicModule));
         }
     }
 }

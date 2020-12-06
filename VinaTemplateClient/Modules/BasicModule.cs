@@ -5,22 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 
 using CitizenFX.Core;
+using CitizenFX.Core.UI;
 using CitizenFX.Core.Native;
 
-using VinaFrameworkServer.Core;
+using VinaFrameworkClient.Core;
 
-namespace VinaTemplateServer.Modules
+namespace VinaTemplateClient.Modules
 {
-    public class PlayerModule : Module
+    public class BasicModule : Module
     {
-        public PlayerModule(Server server) : base(server)
+        public BasicModule(Client client) : base(client)
         {
-            script.AddTick(UpdateProcess);
+
         }
 
         #region MODULES
 
-        private VehicleModule vehicleModule;
+        
 
         #endregion
         #region ACCESSORS
@@ -37,20 +38,15 @@ namespace VinaTemplateServer.Modules
 
         protected override void OnModuleInitialized()
         {
-            vehicleModule = server.GetModule<VehicleModule>();
+            
         }
 
-        protected override void OnPlayerConnecting(Player player)
+        protected override void OnPlayerDied(Player player)
         {
-
+            
         }
 
-        protected override void OnPlayerDropped(Player player, string reason)
-        {
-
-        }
-
-        protected override void OnPlayerClientInitialized(Player player)
+        protected override void OnPlayerResurect(Player player)
         {
 
         }
@@ -63,10 +59,7 @@ namespace VinaTemplateServer.Modules
         #endregion
         #region MODULE TICKS
 
-        private async Task UpdateProcess()
-        {
-            await Server.Delay(0);
-        }
+
 
         #endregion
         #region MODULE METHODS

@@ -7,8 +7,7 @@ namespace VinaTemplateServer
     {
         public Server()
         {
-            AddModule(typeof(PlayerModule));
-            AddModule(typeof(VehicleModule));
+            AddModule(typeof(BasicModule));
         }
     }
 }

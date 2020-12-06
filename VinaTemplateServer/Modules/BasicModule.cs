@@ -11,16 +11,16 @@ using VinaFrameworkServer.Core;
 
 namespace VinaTemplateServer.Modules
 {
-    public class VehicleModule : Module
+    public class BasicModule : Module
     {
-        public VehicleModule(Server server) : base(server)
+        public BasicModule(Server server) : base(server)
         {
-            script.AddTick(UpdateProcess);
+
         }
 
         #region MODULES
 
-        private PlayerModule playerModule;
+
 
         #endregion
         #region ACCESSORS
@@ -37,7 +37,7 @@ namespace VinaTemplateServer.Modules
 
         protected override void OnModuleInitialized()
         {
-            playerModule = server.GetModule<PlayerModule>();
+
         }
 
         protected override void OnPlayerConnecting(Player player)
@@ -63,10 +63,7 @@ namespace VinaTemplateServer.Modules
         #endregion
         #region MODULE TICKS
 
-        private async Task UpdateProcess()
-        {
-            await Server.Delay(0);
-        }
+
 
         #endregion
         #region MODULE METHODS
